@@ -1,7 +1,131 @@
 <!DOCTYPE html>
+<!--
+	This is an html comment. It is for people, not computers.
+-->
+
 <html>
-<body>
-<h1>Hello World jaksdjfkajsdf</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<!-- Notice how everything in html is tagged like this: <tag> your code/text </tag> -->
+	<!-- Notice how spacing and whitespace doesn't really matter to the computer.
+	     But it does help the person reading this code figure out what's going on. -->
+
+	<head>
+	<!-- By convention, you put stuff that isn't necessarily seen
+	     on the page inside the "head" tag (e.g. title, meta keywords/description,
+	     javascript code, links to external files, etc.) -->
+
+		<title> Example Title: Go CHS! </title>
+
+<!--Below is CSS code, skip down to the body for now and jump back up here when my comments tell you to! -->
+<!-- ------------------------------------------------------------------------------------ -->
+	<style> /* this is a CSS comment. it's different than an html comment.
+		 	why?  because programmers in the 70s hated us. */
+
+		body { /* the "body" tag already exists and we can customize it */
+    			background-color: #F0FFFF; /* try putting in "pink" or "#F0FFFF" */
+		}
+
+
+		myTag { /* a tag of my own invention...kind of.
+				you can also think of this as me manually changing some defaults
+				of html untagged plain text */
+    			font-family: "Times New Roman";
+    			font-size: 25px;
+    			color: orange;
+		}
+	</style>
+<!-- ------------------------------------------------------------------------------------ -->
+	</head>
+
+
+	<body>
+		<!-- Put information that you want to see on the page within the body tag -->
+
+		Hello world, this is just plain text without a tag.
+		Notice that I'm typing on different lines in my word processor
+		but it shows up as one line on my localhost. </br>
+		Unless I add in a line break.
+
+		<p> With a paragraph tag, I am putting this line of 
+			text in its own section--kind of like a textbox. </p>
+
+		<h2> Headers are fun type of tag to spice up your text! </h2>
+
+		<p><strong><font color="blue"> Look online for other tags you can 
+			to customize your text! There are so many!</font> </strong></p>
+
+		<!-- The following is a line of CSS.  In general--use HTML to describe
+		     the structure of your page, use CSS to give it "style". ;) -->
+		<!-- Get it? Because the keyword that lets you know it's CSS is "style"? -->
+
+		<p style="color:red"> I colored this with a quick-and-dirty line of CSS. </p>
+
+		<!-- The line above isn't the best coding practice, you will usually see
+		     CSS within a <style> </style> tag (which itself is in the header tag
+		     since it won't be what we actually see, but a description of what we
+		     could see if we use our CSS code).  Jump back up to the head section
+		     to see my CSS code, then see it in action below this comment.-->
+	
+		<myTag> hello there </myTag>
+
+	</body>
+
 </html>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+FREQUENTLY ASKED QUESTIONS* ABOUT THINGS NOT EXEMPLIFIED IN THE CODE ABOVE 
+(*frequently asked by me as I learned this stuff)
+Warning: this is all pretty simplified and thus probably not 100% correct, learn more by googling it
+
+So what is JavaScript?
+	Much like CSS, an add on to HTML except with the tag <script></script>.
+	Just as you use CSS to prettify your HTML, you use JS to help you "do stuff".
+	"do stuff" = windows, text fields, images, embed java applets.
+
+When do I use XML?
+	To store and transport data.  Like if you're creating a web application that stores
+	your contacts you would use XML to slap in the data of all those people, and your actual 
+	HTML code just needs to be the structure that can hold one of your contacts.
+	In other words, you won't need to do <p> Jane </p>, <p> Bob </p> every time you want to add
+	a contact.
+	
+	Side note: If you've heard of JSON, it's just an alternative to XML.
+
+What is JQuery?
+	It's a JavaScript library.  So just extra features for your JS.
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	Just add that in your HTML head somewhere before your actual JS code and you're good to go.
+
+What is Bootstrap?
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	Another addition to your JavaScript, kind of like JQuery but it's not a library--it's a
+	framework.  It basically makes your site look good for mobile.
+
+So I totally know this but I'm asking for a friend, what is "localhost"?
+	Ugh...computer scientists are so into their jargon and abbreviations that it's going to be the
+	death of me.  Here are some words/phrases computer science people dish out like everyone is
+	supposed to know them.
+	localhost: your computer; as in this page cannot be found online as an actual website
+		   but you can run it (open with->your favorite browser) on your localhost 
+		   to see what it looks like
+	AJAX: not a language, just a technique in which you call a javascript function to change
+	      something on the webpage without having to refresh it (e.g. on button click, erase
+	      some section of text)
+	Client side/front end: the web browser that is looking at the web page (e.g. you on facebook)
+	Server side/back end: the server (some large computer probably in Iceland that is on 24/7) that 
+                              hosts the website; a "middleman" computer that processes and holds data as 
+			      it rushes from one computer to another
+	Web host: companies "host" a set of servers and will let you use them, sometimes free for limited
+		  use--you do not want to host yourself because you don't own a ginormous computer in
+		  Iceland that is on 24/7
+
+What about those other web-ish languages.  Like PHP and Ruby and whatnot?
+	Those are server side coding languages.  HTML/CSS/JavaScript are client side languages (you run
+	and process them through your machine) and server-side languages.  If you work with server side
+	languages the code you write gets sent to the server that is hosting your website, and that server
+	then distributes the code to whoever happens to go to www.yourwebsite.com.  You want to use server
+	side languages when you have a website that requires something like logging in--you don't want your
+	personal computer to hold all that data of everyone's log in information.
+	
+
+-->
